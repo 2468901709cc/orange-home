@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>娱乐 · 橙子</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/fun.css">
+</head>
+<body data-page="fun">
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">橙子 🍊</a>
+      <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false"><span></span></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"  data-page="home">首页</a>
+        <a href="work.html"   data-page="work">工作</a>
+        <a href="study.html"  data-page="study">学习</a>
+        <a href="fun.html"    data-page="fun">娱乐</a>
+        <a href="music.html"  data-page="music">音乐</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="fun-header">
+      <div class="container">
+        <h1 class="page-title">娱乐空间</h1>
+        <p class="page-subtitle">工作之外的避风港，游戏、攻略与奇思妙想。</p>
+      </div>
+    </section>
+
+    <section class="fun-content">
+      <div class="container">
+        
+        <!-- 1. 3D 翻转卡片互动区 -->
+        <h2 class="section-heading">🎮 私藏展柜 <span class="hint">(鼠标悬停查看介绍)</span></h2>
+        <div class="flip-grid">
+          
+          <!-- 翻转卡片 1 -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- 正面 -->
+              <div class="flip-card-front" style="background-image: url('assets/images/fun-front-1.jpg');">
+                <div class="front-title">赛博朋克 2077</div>
+              </div>
+              <!-- 背面 -->
+              <div class="flip-card-back">
+                <h3>夜之城</h3>
+                <p>哪怕被背叛，哪怕失去一切，也要在夜之城活出个名堂。</p>
+                <a href="#" class="btn-link">看看截图</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 翻转卡片 2 -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-color: #1e1e24;">
+                <div class="front-title">黑神话：悟空</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>齐天大圣</h3>
+                <p>白骨之后，重走西游。目前还在苦战虎先锋...</p>
+                <a href="#" class="btn-link">查看进度</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 翻转卡片 3 (占位) -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: linear-gradient(45deg, #222, #444);">
+                <div class="front-title">待添加收藏</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>敬请期待</h3>
+                <p>这里未来会放上更多好玩的游戏和动漫收藏。</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 2. 游戏攻略资料库 -->
+        <h2 class="section-heading">📚 攻略与资料库</h2>
+        <div class="guide-grid">
+          <a href="#" class="guide-card">
+            <div class="guide-icon">📜</div>
+            <div class="guide-info">
+              <h3>艾尔登法环 - 全收集路线</h3>
+              <p>包含所有骨灰、护符和传说武器的详细图文路线。</p>
+            </div>
+          </a>
+
+          <a href="#" class="guide-card">
+            <div class="guide-icon">📁</div>
+            <div class="guide-info">
+              <h3>各类游戏存档与修改器</h3>
+              <p>自用的一些资源归档，防止换电脑丢失。</p>
+            </div>
+          </a>
+
+          <a href="#" class="guide-card">
+            <div class="guide-icon">🗺️</div>
+            <div class="guide-info">
+              <h3>博德之门3 - 剧情分支梳理</h3>
+              <p>防剧透版，帮助打全结局。</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- 3. 实用小工具与外链 -->
+        <h2 class="section-heading">🛠️ 常用工具箱</h2>
+        <div class="tools-list">
+          <a href="#" class="tool-item" target="_blank">
+            <span class="tool-icon">🌐</span>
+            <span class="tool-name">外部小游戏入口</span>
+          </a>
+          <a href="#" class="tool-item" target="_blank">
+            <span class="tool-icon">🎲</span>
+            <span class="tool-name">随机抽签工具</span>
+          </a>
+          <a href="#" class="tool-item" target="_blank">
+            <span class="tool-icon">🎨</span>
+            <span class="tool-name">配色提取器</span>
+          </a>
+          <a href="#" class="tool-item" target="_blank">
+            <span class="tool-icon">🔗</span>
+            <span class="tool-name">常用网站导航</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © 2026 橙子
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

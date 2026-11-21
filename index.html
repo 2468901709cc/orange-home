@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的昵称 · 个人网站</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body data-page="home">
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">橙子🍊</a>
+
+      <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"  data-page="home">首页</a>
+        <a href="work.html"   data-page="work">工作</a>
+        <a href="study.html"  data-page="study">学习</a>
+        <a href="fun.html"    data-page="fun">娱乐</a>
+        <a href="music.html"  data-page="music">音乐</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">你好，我是</p>
+          <h1 class="hero-name">橙子🍊</h1>
+          <p class="hero-tagline">阅尽人间风和昼，终不似少年游。<br>
+	  拾光存绪于此间，慢写往后春秋。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="work.html">看看工作资料</a>
+            <a class="btn btn-ghost" href="study.html">读点学习笔记</a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <!-- 替换为 assets/images/avatar.png -->
+          <img src="assets/images/avatar.png" alt="我的头像">
+        </div>
+      </div>
+    </section>
+
+    <!-- 四个板块入口 -->
+    <section class="entry-section">
+      <div class="container">
+        <h2 class="section-title">逛逛</h2>
+        <div class="entry-grid">
+          <a class="entry-card" href="work.html">
+            <span class="entry-icon" aria-hidden="true">📁</span>
+            <h3>工作资料</h3>
+            <p>可下载的文件，按类别分组。</p>
+          </a>
+          <a class="entry-card" href="study.html">
+            <span class="entry-icon" aria-hidden="true">📝</span>
+            <h3>学习</h3>
+            <p>笔记目录，点进去看单篇内容。</p>
+          </a>
+          <a class="entry-card" href="fun.html">
+            <span class="entry-icon" aria-hidden="true">🎮</span>
+            <h3>娱乐</h3>
+            <p>收藏展示与小游戏入口。</p>
+          </a>
+          <a class="entry-card" href="music.html">
+            <span class="entry-icon" aria-hidden="true">💿</span>
+            <h3>音乐</h3>
+            <p>嵌入播放器和旋转唱片封面。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © 2026 橙子  </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

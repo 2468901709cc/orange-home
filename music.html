@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音乐 · 橙子</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/music.css">
+</head>
+<body data-page="music">
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">橙子 🍊</a>
+      <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false"><span></span></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"  data-page="home">首页</a>
+        <a href="work.html"   data-page="work">工作</a>
+        <a href="study.html"  data-page="study">学习</a>
+        <a href="fun.html"    data-page="fun">娱乐</a>
+        <a href="music.html"  data-page="music">音乐</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="music-header">
+      <div class="container">
+        <h1 class="page-title">唱片与节拍</h1>
+        <p class="page-subtitle">戴上耳机，隔绝烟火。</p>
+      </div>
+    </section>
+
+    <section class="music-content">
+      <div class="container music-layout">
+        
+        <!-- 左侧：旋转唱片 -->
+        <div class="vinyl-wrapper">
+          <div class="vinyl-disc">
+            <!-- 你可以把这里的 src 换成你自己喜欢的歌手或专辑封面 -->
+            <img src="assets/images/album-cover.jpg" alt="专辑封面" class="vinyl-cover">
+            <div class="vinyl-hole"></div>
+          </div>
+        </div>
+
+        <!-- 右侧：播放器与介绍 -->
+        <div class="music-info">
+          <h2>当前播放清单</h2>
+          <p>这里可以写你对这首歌的碎碎念，或者是你建这个歌单的心情。</p>
+          
+          <!-- 音乐播放器占位区 -->
+          <div class="player-embed">
+            <!-- 替换为你自己的网易云/QQ音乐iframe代码 -->
+            <div class="player-placeholder">
+              <p>🎵 播放器嵌入区</p>
+              <span>去网易云网页版生成 iframe 外链，替换这段文字即可</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © 2026 橙子 
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

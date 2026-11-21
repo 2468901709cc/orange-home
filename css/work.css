@@ -1,0 +1,89 @@
+/* ============================================================
+   work.css — 工作台专属
+   ============================================================ */
+
+/* 页面顶部标题区 */
+.work-header {
+  padding: 60px 0 20px;
+}
+
+/* 工作台主体内容区 */
+.work-content {
+  padding-bottom: 80px;
+}
+
+/* 每个大分类的卡片容器 */
+.category-section {
+  margin-bottom: 32px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 30px;
+  /* 增加一个极细微的阴影，让卡片更有质感 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 分类大标题 */
+.category-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-title .icon {
+  font-size: 1.4rem;
+}
+
+/* 文件列表：两列网格 */
+.file-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px;
+}
+
+/* 每一个文件链接 */
+.file-list li a {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all var(--t-fast);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* 鼠标悬停时的反馈：背景变亮、描边发光、向右微动 */
+.file-list li a:hover {
+  background: var(--bg-elev-2);
+  border-color: var(--accent-dim);
+  color: var(--accent);
+  transform: translateX(6px); /* 向右滑动 6px，手感更好 */
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.1);
+}
+
+/* 响应式：手机端变单列 */
+@media (max-width: 768px) {
+  .category-section { 
+    padding: 20px; 
+    margin-bottom: 24px;
+  }
+  
+  .file-list { 
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+
+  /* 手机端悬停不位移，避免页面晃动，改为纯背景高亮 */
+  .file-list li a:hover {
+    transform: none;
+  }
+}

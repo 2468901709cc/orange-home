@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>音乐 · 橙子</title>
+  <title>音乐库 · 橙子</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/music.css">
 </head>
@@ -23,51 +23,84 @@
     </div>
   </header>
 
-  <main>
-    <section class="music-header">
-      <div class="container">
-        <h1 class="page-title">唱片与节拍</h1>
-        <p class="page-subtitle">戴上耳机，隔绝烟火。</p>
-      </div>
-    </section>
+  <main class="music-library container">
+    <div class="library-layout">
+      
+      <!-- 左侧分类导航 -->
+      <aside class="library-sidebar">
+        <h2 class="sidebar-title">我的音乐</h2>
+        <ul class="sidebar-menu">
+          <li class="menu-item active" data-filter="all">
+            <span class="icon">🎵</span> 发现音乐
+          </li>
+          <li class="menu-item" data-filter="favorites">
+            <span class="icon">❤️</span> 我的收藏
+          </li>
+        </ul>
 
-    <section class="music-content">
-      <div class="container music-layout">
-        
-        <!-- 左侧：旋转唱片 -->
-        <div class="vinyl-wrapper">
-          <div class="vinyl-disc">
-            <!-- 你可以把这里的 src 换成你自己喜欢的歌手或专辑封面 -->
-            <img src="assets/images/album-cover.jpg" alt="专辑封面" class="vinyl-cover">
-            <div class="vinyl-hole"></div>
-          </div>
-        </div>
+        <h2 class="sidebar-title" style="margin-top: 30px;">歌手分类</h2>
+        <ul class="sidebar-menu">
+          <li class="menu-item" data-filter="artist-A">
+            <span class="icon">🎤</span> 歌手 A
+          </li>
+          <li class="menu-item" data-filter="artist-B">
+            <span class="icon">🎸</span> 歌手 B
+          </li>
+        </ul>
+      </aside>
 
-        <!-- 右侧：播放器与介绍 -->
-        <div class="music-info">
-          <h2>当前播放清单</h2>
-          <p>这里可以写你对这首歌的碎碎念，或者是你建这个歌单的心情。</p>
-          
-          <!-- 音乐播放器占位区 -->
-          <div class="player-embed">
-            <!-- 替换为你自己的网易云/QQ音乐iframe代码 -->
-            <div class="player-placeholder">
-              <p>🎵 播放器嵌入区</p>
-              <span>去网易云网页版生成 iframe 外链，替换这段文字即可</span>
+      <!-- 右侧歌曲列表 -->
+      <section class="library-content">
+        <h1 class="page-title">发现音乐</h1>
+        <p class="page-subtitle">共 <span id="songCount">3</span> 首歌曲</p>
+
+        <ul class="song-list" id="songList">
+          <!-- 歌曲 1 -->
+          <li class="song-item" data-id="1" data-artist="artist-A">
+            <div class="song-info">
+              <span class="song-name">晚风轻抚过</span>
+              <span class="song-artist">歌手 A</span>
             </div>
-          </div>
-        </div>
+            <div class="song-actions">
+              <button class="btn-play">▶ 播放</button>
+              <button class="btn-favorite" title="收藏">♡</button>
+            </div>
+          </li>
 
-      </div>
-    </section>
+          <!-- 歌曲 2 -->
+          <li class="song-item" data-id="2" data-artist="artist-B">
+            <div class="song-info">
+              <span class="song-name">远方依旧橘色暖霞</span>
+              <span class="song-artist">歌手 B</span>
+            </div>
+            <div class="song-actions">
+              <button class="btn-play">▶ 播放</button>
+              <button class="btn-favorite" title="收藏">♡</button>
+            </div>
+          </li>
+
+          <!-- 歌曲 3 -->
+          <li class="song-item" data-id="3" data-artist="artist-A">
+            <div class="song-info">
+              <span class="song-name">我们望天际之外</span>
+              <span class="song-artist">歌手 A</span>
+            </div>
+            <div class="song-actions">
+              <button class="btn-play">▶ 播放</button>
+              <button class="btn-favorite" title="收藏">♡</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      © 2026 橙子 
-    </div>
+    <div class="container">© 2026 橙子</div>
   </footer>
 
   <script src="js/nav.js"></script>
+  <script src="js/music.js"></script>
 </body>
 </html>
